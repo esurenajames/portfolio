@@ -7,11 +7,13 @@ html {
 }  
 
 #home,
-#about,
-#projects {
+#about {
   scroll-margin-top: 50px; /* Adjust this value to your navbar height */
 }
 
+#project {
+    scroll-margin-top: 80px; 
+  }
 
 #contact {
   scroll-margin-top: 110px; /* Adjust this value to your navbar height */

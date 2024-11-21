@@ -8,6 +8,13 @@
     </div>
 
     <!-- Mobile Menu -->
+    <div class="sm:hidden flex items-center mr-4">
+      <button @click="toggleMenu" class="text-gray-800 text-2xl">
+        &#9776; 
+      </button>
+    </div>
+
+
     <div v-if="menuOpen" class="fixed inset-0 bg-black bg-opacity-50 z-40 transition-opacity">
       <div class="fixed top-0 right-0 bg-white w-3/5 h-full shadow-lg flex flex-col justify-between p-6 transition-transform transform">
         <button @click="toggleMenu" class="absolute top-4 right-4 text-gray-800 text-4xl">
