@@ -8,6 +8,7 @@
     </div>
 
     <!-- Mobile Menu -->
+
     <div class="sm:hidden flex items-center mr-4">
       <button @click="toggleMenu" class="text-gray-800 text-2xl">
         &#9776; 
@@ -64,7 +65,7 @@
           </li>
           <li>
             <a
-              href="/resume.pdf"
+              href="/"
               download="James_Esurena_Resume.pdf"
               class="text-blue-900 underline text-lg font-medium hover:text-gray-700"
             >
@@ -116,7 +117,7 @@
       <li>
         <!-- Resume Button -->
         <a
-          href="/resume.pdf"
+          href="/"
           download="James_Esurena_Resume.pdf"
           class="text-white font-bold py-2 px-6 rounded-full bg-black hover:bg-gray-900"
         >
