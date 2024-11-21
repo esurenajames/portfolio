@@ -1,6 +1,7 @@
 <script setup>
 import { ref, watch } from 'vue';
 import { SpeedInsights } from '@vercel/speed-insights/vue';
+import { Analytics } from '@vercel/analytics/vue';
 
 import Home from './views/Home.vue';
 import About from './views/About.vue';
@@ -59,6 +60,7 @@ window.addEventListener('scroll', updateCurrentPage);
   <div id="contact"><Contact /></div>
 
   <SpeedInsights />
+  <Analytics />
   <!-- Components -->
   <Footers />
   <Socials />
