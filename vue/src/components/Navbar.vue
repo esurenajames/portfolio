@@ -65,7 +65,7 @@
           </li>
           <li>
             <a
-              href="https://portfolio-esurena.vercel.app/resume.pdf"
+              href="/James_Esurena_Resume.pdf"
               download="James_Esurena_Resume.pdf"
               class="text-blue-900 underline text-lg font-medium hover:text-gray-700"
             >
@@ -117,7 +117,7 @@
       <li>
         <!-- Resume Button -->
         <a
-          href="https://portfolio-esurena.vercel.app/resume.pdf"
+          href="/James_Esurena_Resume.pdf"
           download="James_Esurena_Resume.pdf"
           class="text-white font-bold py-2 px-6 rounded-full bg-black hover:bg-gray-900"
         >
