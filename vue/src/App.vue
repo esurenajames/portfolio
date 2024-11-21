@@ -2,7 +2,7 @@
 import { ref, watch } from 'vue';
 
 // Import components
-import Hero from './views/Hero.vue';
+import Home from './views/Home.vue';
 import About from './views/About.vue';
 import Project from './views/Project.vue';
 import Contact from './views/Contact.vue';
@@ -21,7 +21,7 @@ watch(currentPage, (newPage) => {
 // Function to update the current page based on scroll position
 const updateCurrentPage = () => {
   const sections = [
-    { id: 'hero', title: 'Home' },
+    { id: 'home', title: 'Home' },
     { id: 'about', title: 'About' },
     { id: 'project', title: 'Projects' },
     { id: 'contact', title: 'Contact' },
@@ -48,18 +48,23 @@ window.addEventListener('scroll', updateCurrentPage);
 <template>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
+  <!-- Navbar -->
+  <Navbar :current-page="currentPage" />
+
   <!-- Sections -->
-  <div id="hero"><Hero /></div>
+  <div id="home"><Home /></div>
   <div id="about"><About /></div>
   <div id="project"><Project /></div>
   <div id="contact"><Contact /></div>
 
   <!-- Components -->
-  <Navbar />
   <Footers />
   <Socials />
 </template>
 
 <style scoped>
 /* Optional styles for App.vue */
+html {
+  scroll-behavior: smooth; /* Smooth scrolling */
+}
 </style>
