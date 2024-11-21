@@ -1,7 +1,7 @@
 <template>
     <div class="bg-gray-900 pb-16">
       <!-- Skills Section -->
-      <div class="skills-section px-8 lg:px-20">
+      <div class="skills-section px-8 xl:px-20">
         <h2 class="md:text-4xl text-2xl font-bold text-white text-center md:py-10 py-5 mb-6">Skills</h2>
         <div class="lg:ml-20 lg:mr-20 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
           <div

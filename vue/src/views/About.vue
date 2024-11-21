@@ -1,7 +1,7 @@
 <template>
   <section id="about" class="section-class">
     <div class="bg-gray-900 pt-10 rounded-3xl">
-    <div class="flex flex-col lg:flex-row items-center justify-center py-8 px-8 lg:px-20 space-y-10 lg:space-y-0">
+    <div class="flex flex-col xl:flex-row items-center justify-center py-8 px-8 xl:px-20 space-y-10 xl:space-y-0">
       <!-- Image Section -->
       <div class="flex-1 mt-10 flex justify-center">
         <!-- Wrapper for glow effect -->
