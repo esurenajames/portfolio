@@ -41,8 +41,8 @@
             and
             <span class="font-bold text-[#42B883] inline-flex tracking-tighter">
               <img
-                src="@/assets/Vue.js.png"
-                alt="Vue.js Logo"
+                src="@/assets/vue.js.png"
+                alt="vue.js Logo"
                 class="h-6 w-auto mr-1"
               />
               Vue.js
