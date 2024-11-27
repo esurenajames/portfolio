@@ -51,7 +51,7 @@ window.addEventListener('scroll', updateCurrentPage);
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
   <!-- Navbar -->
-  <Navbar :current-page="currentPage" />
+  <Navbar :current-page="currentPage" /> 
 
   <!-- Sections -->
   <div id="home"><Home /></div>

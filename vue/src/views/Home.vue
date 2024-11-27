@@ -42,7 +42,7 @@
             <span class="font-bold text-[#42B883] inline-flex tracking-tighter">
               <img
                 src="@/assets/vue.js.png"
-                alt="vue.js Logo"
+                alt="Vue.js Logo"
                 class="h-6 w-auto mr-1"
               />
               Vue.js
@@ -52,34 +52,15 @@
           <div class="flex flex-col md:flex-row items-start space-y-4 md:space-y-0 md:space-x-6 justify-start">
             <!-- Icons -->
             <div class="flex py-2 space-x-4">
-              <a href="https://www.linkedin.com/in/esurenajames/" target="_blank">
-                <img
-                  src="@/assets/linkedin.png"
-                  alt="LinkedIn"
-                  class="h-6 w-6 lg:h-8 lg:w-8 hover:opacity-80 transition-all"
-                />
-              </a>
-              <a @click="openMail" href="javascript:void(0)">
-                <img
-                  src="@/assets/gmail.png"
-                  alt="Gmail"
-                  class="h-6 w-6 lg:h-8 lg:w-8 hover:opacity-80 transition-all"
-                />
-              </a>
-              <a href="https://github.com/esurenajames/" target="_blank">
-                <img
-                  src="@/assets/github.png"
-                  alt="Github"
-                  class="h-6 w-6 lg:h-8 lg:w-8 hover:opacity-80 transition-all"
-                />
-              </a>
-              <a href="https://www.instagram.com/cinnamonesurena/" target="_blank">
-                <img
-                  src="@/assets/instagram.png"
-                  alt="Instagram"
-                  class="h-6 w-6 lg:h-8 lg:w-8 hover:opacity-80 transition-all"
-                />
-              </a>
+              <div
+                v-for="social in socialIcons"
+                :key="social.label"
+                class="hover:opacity-80 transition-all"
+              >
+                <a :href="social.href" :target="social.target" @click="social.action">
+                  <img :src="social.imgSrc" :alt="social.label" class="h-6 w-6 lg:h-8 lg:w-8" />
+                </a>
+              </div>
             </div>
             <!-- Button -->
             <a
@@ -115,24 +96,57 @@
   </section>
 </template>
 
-
 <script>
-  export default {
-    name: 'Hero',
-    methods: {
-      openMail() {
-        const email = 'esurenajames@gmail.com';
-        const subject = 'Hire me'; // Optional
-        const body = 'Hire me';  // Optional
-        const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-        
-        // Open the mailto link in a new tab
-        window.open(mailtoLink, '_blank');
-      },
-    }
-  };
+import linkedinIcon from "@/assets/linkedin.png";
+import gmailIcon from "@/assets/gmail.png";
+import githubIcon from "@/assets/github.png";
+import instagramIcon from "@/assets/instagram.png";
+
+export default {
+  name: "Hero",
+  methods: {
+    openMail() {
+      const email = "esurenajames@gmail.com";
+      const subject = "Hire me";
+      const body = "Hire me";
+      const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      window.open(mailtoLink, "_blank");
+    },
+  },
+  data() {
+    return {
+      socialIcons: [
+        {
+          label: "LinkedIn",
+          href: "https://www.linkedin.com/in/esurenajames/",
+          target: "_blank",
+          imgSrc: linkedinIcon,
+        },
+        {
+          label: "Gmail",
+          href: "javascript:void(0)", // Placeholder for action
+          target: null,
+          imgSrc: gmailIcon,
+          action: () => this.openMail(),
+        },
+        {
+          label: "Github",
+          href: "https://github.com/esurenajames/",
+          target: "_blank",
+          imgSrc: githubIcon,
+        },
+        {
+          label: "Instagram",
+          href: "https://www.instagram.com/cinnamonesurena/",
+          target: "_blank",
+          imgSrc: instagramIcon,
+        },
+      ],
+    };
+  },
+};
 </script>
 
 <style>
-
+/* Add custom styles if necessary */
 </style>
