@@ -93,11 +93,31 @@ const isActive = (section) => props.currentPage === section;
 
 // Navigation Links
 const navLinks = [
-  { label: "Home", href: "#home", type: "link" },
-  { label: "About", href: "#about", type: "link" },
-  { label: "Projects", href: "#project", type: "link" },
-  { label: "Contact", href: "#contact", type: "link" },
-  { label: "Resume", href: "/James_Esurena_Resume.pdf", type: "download" },
+  { 
+    label: "Home", 
+    href: "#home", 
+    type: "link" 
+  },
+  { 
+    label: "About",
+    href: "#about", 
+    type: "link" 
+  },
+  { 
+    label: "Projects", 
+    href: "#project", 
+    type: "link" 
+  },
+  { 
+    label: "Contact", 
+    href: "#contact", 
+    type: "link" 
+  },
+  { 
+    label: "Resume", 
+    href: "/James_Esurena_Resume.pdf", 
+    type: "download" 
+  },
 ];
 </script>
 
