@@ -72,9 +72,17 @@
 
 <script setup>
 import { ref, computed } from "vue";
+import seasaltBucket from '../assets/seasalt-bucket.png'
 
 // Projects with tags
 const projects = [
+  {
+    title: "Seasalt Bucket Restaurant",
+    description: "Seasalt Bucket is a static, responsive seafood restaurant website built with Vue.js and Tailwind CSS, showcasing the menu, locations, and more.",
+    image: seasaltBucket,
+    link: "https://seasalt-bucket-m0rkhk709-esurenajames-projects.vercel.app/",
+    tags: ["Vue.js", "Tailwind CSS", "JavaScript"],
+  },
   {
     title: "Project One",
     description: "A Laravel and Vue.js project.",
@@ -95,13 +103,6 @@ const projects = [
     image: "https://via.placeholder.com/400x250",
     link: "https://example.com/project-three",
     tags: ["Laravel", "Alpine.js", "CSS3"],
-  },
-  {
-    title: "Project Three",
-    description: "A full-stack project using Laravel and Alpine.js.",
-    image: "https://via.placeholder.com/400x250",
-    link: "https://example.com/project-three",
-    tags: ["Laravel", "Alpine.js", "CSS3"]
   },
 ];
 
