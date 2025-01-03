@@ -73,6 +73,7 @@
 <script setup>
 import { ref, computed } from "vue";
 import seasaltBucket from '../assets/seasalt-bucket.png'
+import aiPdf from '../assets/ai-pdf.png'
 
 // Projects with tags
 const projects = [
@@ -83,12 +84,12 @@ const projects = [
     link: "seasalt-bucket.vercel.app",
     tags: ["Vue.js", "Tailwind CSS", "JavaScript"],
   },
-  {
-    title: "Project One",
-    description: "A Laravel and Vue.js project.",
-    image: "https://via.placeholder.com/400x250",
+    {
+    title: "AI PDF",
+    description: "A Laravel, Inertia, and Vue.js-powered platform offering an all-in-one solution for document and image conversion. Easily create AI-generated quizzes and analyze documents to craft tailored questions for efficient learning.",
+    image: aiPdf,
     link: "https://example.com/project-one",
-    tags: ["Laravel", "Vue.js", "JavaScript"],
+    tags: ["Laravel", "Vue.js", "Inertia.js", "Open AI"]
   },
   {
     title: "Project Two",
