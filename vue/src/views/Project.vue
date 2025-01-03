@@ -86,7 +86,7 @@ const projects = [
   },
     {
     title: "AI PDF",
-    description: "A Laravel, Inertia, and Vue.js-powered platform offering an all-in-one solution for document and image conversion. Easily create AI-generated quizzes and analyze documents to craft tailored questions for efficient learning.",
+    description: "A Laravel, Inertia, and Vue.js-powered platform offering an all-in-one solution for document and image conversion and easy creation of AI-generated quizzes from your document.",
     image: aiPdf,
     link: "https://example.com/project-one",
     tags: ["Laravel", "Vue.js", "Inertia.js", "Open AI"]
