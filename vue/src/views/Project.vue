@@ -80,7 +80,7 @@ const projects = [
     title: "Seasalt Bucket Restaurant",
     description: "Seasalt Bucket is a static, responsive seafood restaurant website built with Vue.js and Tailwind CSS, showcasing the menu, locations, and more.",
     image: seasaltBucket,
-    link: "https://seasalt-bucket-m0rkhk709-esurenajames-projects.vercel.app/",
+    link: "seasalt-bucket.vercel.app",
     tags: ["Vue.js", "Tailwind CSS", "JavaScript"],
   },
   {
